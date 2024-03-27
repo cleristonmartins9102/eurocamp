@@ -9,9 +9,13 @@ jest.mock('fs', () => {
 })
 
 describe('Handler File Adapter', () => {
-  it('should call readFile with correct value', async () => {
-    const sut = new HandlerFileAdapter()
+  let sut: HandlerFileAdapter
 
+  beforeEach(() => {
+    sut = new HandlerFileAdapter()
+  })
+
+  it('should call readFile with correct value', async () => {
     await sut.open('input.txt')
 
     expect(readFileSpy).toHaveBeenCalled()
