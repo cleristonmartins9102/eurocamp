@@ -1,6 +1,6 @@
 import { HandlerFileAdapter } from '../../src/infra/adapters/handler-file'
 
-const readFileSpy = jest.fn().mockResolvedValue('mockedTest')
+const readFileSpy = jest.fn().mockReturnValue('mockedTest')
 
 jest.mock('fs', () => {
   return {
