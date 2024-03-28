@@ -1,4 +1,4 @@
-import { LoadSumOfFirstAndLastDigitSpeelFromList } from '../../../src/data/features/load-sum-of-first-and-last-by-speel-from-list'
+import { LoadSumOfFirstAndLastDigitSpeelFromList } from '../../../../src/data/features/load-sum-of-first-and-last-by-speel-from-list'
 
 describe('Load Sum of First and Last Number By Speel From List', () => {
   it('should returns the correct value with multiple value by line', () => {
