@@ -6,7 +6,7 @@ import path from 'path'
 export class DayOneController {
   constructor (private readonly handlerFileAdapter: ReadFileSync) {}
   async handler (): Promise<number> {
-    const filePath = path.join(__dirname, '../data/input.txt')
+    const filePath = path.join(__dirname, '../data/day1.txt')
     const fileContent = await this.handlerFileAdapter.open(filePath)
     const loadSum = new LoadSumOfFirstAndLastDigitFromList()
     const dataList = fileContent.split('\n')
