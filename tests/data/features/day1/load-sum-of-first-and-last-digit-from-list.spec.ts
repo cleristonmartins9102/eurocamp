@@ -1,4 +1,4 @@
-import { LoadSumOfFirstAndLastDigitFromList } from '../../../../src/data/features/load-sum-of-first-and-last-digit-from-list'
+import { LoadSumOfFirstAndLastDigitFromList } from '../../../../src/data/features/day1/load-sum-of-first-and-last-digit-from-list'
 
 describe('Load Sum of First and Last Letter From List', () => {
   it('should returns the correct value with multiple value by line', () => {

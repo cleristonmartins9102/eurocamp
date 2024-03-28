@@ -1,5 +1,5 @@
 import { readFileSync } from 'fs'
-import { type ReadFileSync } from '../../../src/domain/read-file-sync'
+import { type ReadFileSync } from '../../domain/read-file'
 
 export class HandlerFileAdapter implements ReadFileSync {
   async open (filePath: string): Promise<string> {
