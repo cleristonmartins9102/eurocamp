@@ -1,7 +1,7 @@
 import { readFileSync } from 'fs'
-import { type ReadFileSync } from '../../domain/read-file'
+import { type ReadFile } from '../../domain/read-file'
 
-export class HandlerFileAdapter implements ReadFileSync {
+export class HandlerFileAdapter implements ReadFile {
   async open (filePath: string): Promise<string> {
     return readFileSync(filePath).toString()
   }

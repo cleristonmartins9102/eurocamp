@@ -6,7 +6,7 @@ import { LoadSumOfFirstAndLastDigitSpeelFromList } from '../../data/features/day
 export class DayOnePart2Controller {
   constructor (private readonly handlerFileAdapter: ReadFile) {}
   async handler (): Promise<number> {
-    const filePath = path.join(__dirname, '../data/day1.txt')
+    const filePath = path.join(__dirname, '../../data/day1.txt')
     const fileContent = await this.handlerFileAdapter.open(filePath)
     const loadSum = new LoadSumOfFirstAndLastDigitSpeelFromList()
     const dataList = fileContent.split('\n')
