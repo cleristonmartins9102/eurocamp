@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "jest --runInBand --passWithNoTests --watch --coverage false"
+    "test": "jest --runInBand --passWithNoTests --watch --coverage false",
+    "start:day1": "ts-node-dev src/controllers/day1/day-one-part1-controller.ts && ts-node-dev src/controllers/day1/day-one-part2-controller.ts,",
+    "start:day2": "ts-node-dev src/controllers/day2/day-two-part1-controller.ts && ts-node-dev src/controllers/day2/day-two-part2-controller.ts"
   },
   "keywords": [],
   "author": "",

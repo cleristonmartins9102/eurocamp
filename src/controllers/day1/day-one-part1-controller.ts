@@ -1,4 +1,4 @@
-import { LoadSumOfFirstAndLastDigitFromList } from 'src/data/features/day1/load-sum-of-first-and-last-digit-from-list'
+import { LoadSumOfFirstAndLastDigitFromList } from '../../../src/data/features/day1/load-sum-of-first-and-last-digit-from-list'
 import { type ReadFile } from '../../domain/read-file'
 import { HandlerFileAdapter } from '../../infra/adapters/handler-file'
 import path from 'path'
@@ -15,4 +15,4 @@ export class DayOnePart1Controller {
 }
 
 const controller = new DayOnePart1Controller(new HandlerFileAdapter())
-controller.handler().then(response => { console.log(response) }).catch(e => { console.log(e) })
+controller.handler().then(response => { console.log(`Part1: ${response}`) }).catch(e => { console.log(e) })

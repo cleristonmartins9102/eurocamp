@@ -15,4 +15,4 @@ export class DayTwoPart1Controller {
 }
 
 const controller = new DayTwoPart1Controller(new HandlerFileAdapter())
-controller.handler().then(response => { console.log(response) }).catch(e => { console.log(e) })
+controller.handler().then(response => { console.log(`Part1: ${response}`) }).catch(e => { console.log(e) })
